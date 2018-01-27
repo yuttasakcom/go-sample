@@ -1,13 +1,11 @@
 package utils
 
-import (
-	"testing"
-)
+import "testing"
 
-func TestReverseString(t *testing.T) {
-	msg := reverse()
+func TestReverse(t *testing.T) {
+	msg := Reverse("Hello World!")
 
 	if msg != "!dlroW olleH" {
-		t.Error("Expected !dlroW olleH", msg)
+		t.Error("อยากได้ !dlroW olleH แต่ได้ ", msg)
 	}
 }
