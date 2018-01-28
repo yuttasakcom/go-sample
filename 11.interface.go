@@ -56,4 +56,21 @@ func main() {
 	// these structs as arguments to `measure`.
 	measure(r)
 	measure(c)
+
+	checkType("Hello!")
+	checkType(10)
+	checkType(true)
+}
+
+func checkType(v interface{}) {
+	switch v.(type) {
+	case string:
+		fmt.Println("string")
+	case int:
+		fmt.Println("int")
+	case bool:
+		fmt.Println("boolean")
+	default:
+		fmt.Println("any")
+	}
 }
