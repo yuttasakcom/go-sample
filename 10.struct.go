@@ -7,6 +7,10 @@ type person struct {
 	NickName string
 }
 
+func (p person) greet() {
+	fmt.Println("Hello!")
+}
+
 func mutatePerson(p person) {
 	p.Name = "Hacker"
 	fmt.Println(p)
@@ -31,4 +35,7 @@ func main() {
 	fmt.Println("----------")
 	mutatePersonPointer(&p)
 	fmt.Println(p)
+
+	fmt.Println("---------")
+	p.greet()
 }
