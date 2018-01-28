@@ -1,0 +1,11 @@
+package main
+
+import (
+	"fmt"
+
+	"github.com/yuttasakcom/go-sample/utils"
+)
+
+func main() {
+	fmt.Println("Sum 1 + 2 = ", utils.Add(1, 2))
+}
