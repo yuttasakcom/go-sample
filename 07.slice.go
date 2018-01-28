@@ -21,5 +21,5 @@ func main() {
 	fmt.Println(b[1:])  // ตั้งแต่ index = 1 , เป็นต้นไป
 	fmt.Println(b[:3])  // ตั้งแต่ index = 0 , ถึง index = 3 แต่ไม่เอา index = 3
 	fmt.Println(b[1:3]) // ตั้งแต่ index = 1 , ถึง index = 3 แต่ไม่เอา index = 3
-	fmt.Println(b[:])
+	fmt.Println(b[:])   // ทั้งหมด
 }
