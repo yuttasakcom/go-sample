@@ -1,16 +1,31 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"reflect"
+	"strconv"
+)
+
+var Pi = 3.14
 
 func main() {
 
 	var name string
 	name = "Gopher"
-	fmt.Println(name)
+	fmt.Print(name)
+	fmt.Printf(" type is %T\n", name)
 
 	var age = 35
-	fmt.Println(age)
+	fmt.Print(age)
+	fmt.Printf(" type is %T\n", age)
+	fmt.Printf("Convert %d to string = %q\n", age, strconv.Itoa(age))
 
 	grade := 3.47
-	fmt.Println(grade)
+	fmt.Print(grade)
+	fmt.Printf(" type is %T\n", grade)
+
+	// Convert
+	sum := float64(age) * Pi
+	fmt.Println("sum: ", sum)
+	fmt.Println("type of sum =", reflect.TypeOf(sum))
 }
