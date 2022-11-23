@@ -33,4 +33,14 @@ func main() {
 	greeting := "สวัสดี"
 	fmt.Println("Len: ", len(greeting))
 	fmt.Println("RuneCount: ", utf8.RuneCountInString(greeting))
+
+	// ## Output
+	// Gopher type is string
+	// 35 type is int
+	// Convert 35 to string = "35"
+	// 3.47 type is float64
+	// sum:  109.9
+	// type of sum = float64
+	// Len:  18
+	// RuneCount:  6
 }
