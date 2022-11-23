@@ -4,6 +4,7 @@ import (
 	"fmt"
 	"reflect"
 	"strconv"
+	"unicode/utf8"
 )
 
 var Pi = 3.14
@@ -28,4 +29,8 @@ func main() {
 	sum := float64(age) * Pi
 	fmt.Println("sum: ", sum)
 	fmt.Println("type of sum =", reflect.TypeOf(sum))
+
+	greeting := "สวัสดี"
+	fmt.Println("Len: ", len(greeting))
+	fmt.Println("RuneCount: ", utf8.RuneCountInString(greeting))
 }
